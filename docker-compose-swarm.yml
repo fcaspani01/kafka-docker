@@ -1,11 +1,11 @@
 version: '3.2'
 services:
   zookeeper:
-    image: wurstmeister/zookeeper
+    image: jenkins.serioplast.local:10000/zookeeper:3.4.13
     ports:
       - "2181:2181"
   kafka:
-    image: wurstmeister/kafka:latest
+    image: jenkins.serioplast.local:10000/kafka:2.3.0
     ports:
       - target: 9094
         published: 9094
